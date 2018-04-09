@@ -6,7 +6,7 @@ Clone this repository with the command:
 
 ```bash
 git clone https://github.com/s-h-frey/mentormonth.git
-cd ruby-google-sheets-sinatra
+cd mentormonth
 ```
 
 Install the dependencies:
