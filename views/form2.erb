@@ -1,10 +1,44 @@
 <div class="container">
     <form action="/output2" method="POST">
         <div class="group">
-            <input type="email" class="form-control" name="email" id="email">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Email address</label>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" name="check[]" value="application" id="application>" />
+                    <span>I have already an application</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" name="check[]" value="xing_account" id="xing_account>" />
+                    <span>I have already a xing account</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" name="check[]" value="best" id="best>" />
+                    <span>I am the best</span>
+                </label>
+            </p>
+            <br>
+            <br>
+            <p>
+                <label>
+                    <input type="radio" name="assesement_month" value="juni" id="juni" checked />
+                    <span>Juni</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="assesement_month" value="juli" id="juli" />
+                    <span>Juli</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="assesement_month" value="august" id="august" />
+                    <span>August</span>
+                </label>
+            </p>
         </div>
         <button type="submit" class="btn btn-primary">next</button>
     </form>
