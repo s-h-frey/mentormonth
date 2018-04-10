@@ -27,17 +27,19 @@ end
 post "/output1" do
     session[:name] = params["name"]
     session[:email] = params["email"]
+    session[:date_of_birth] = params["date_of_birth"]
     erb :form2
 end
 
 post "/output2" do
     session[:check] = params["check"]
     session[:assesement_month] = params["assesement_month"]
+    session[:gender] = params["gender"]
     erb :form3
 end
 
 post "/output_final" do
-    new_row = [session[:name], session[:email], session[:check], session[:assesement_month], params["phone_number"], params["age"], params["degree"]]
+    new_row = [session[:name], session[:email], session[:date_of_birth], session[:check], session[:assesement_month], session[:gender], params["phone_number"], params["age"], params["degree"]]
     worksheet.insert_rows(worksheet.num_rows+1, [new_row])
     worksheet.save
     erb :thanks

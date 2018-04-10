@@ -13,6 +13,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+
 /*! cash-dom 1.3.5, https://github.com/kenwheeler/cash @license MIT */
 (function (factory) {
   window.cash = factory();
@@ -8606,13 +8607,13 @@ $jscomp.polyfill = function (e, r, p, m) {
   var _defaults = {
 
     // the default output format for the input field value
-    format: 'mmm dd, yyyy',
+    format: 'dd-mm-yyyy',
 
     // Used to create date object from current input string
     parse: null,
 
     // The initial date to view when first opened
-    defaultDate: null,
+    defaultDate: '01-01-1990',
 
     // Make the `defaultDate` the initial selected value
     setDefaultDate: false,
@@ -8630,7 +8631,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     maxDate: null,
 
     // Number of years either side, or array of upper/lower range
-    yearRange: 10,
+    yearRange: 100,
 
     // used internally (don't config outside)
     minYear: 0,
