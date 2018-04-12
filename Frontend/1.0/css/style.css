@@ -4,18 +4,143 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-size: 15pt;
+  font-size: 4pt;
 }
 
 .wrapper {
-  width: 90vw;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns:
-  grid-template-rows:
+  grid-template-columns: 6.25% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 6.25%;
+  grid-template-rows: 100%;
   grid-template-areas:
-    "1 1 1 1 1"
-    "2 2 2 2 2"
+  "Box1 Box2 Box3 Box4 Box5 Box6 Box7 Box8 Box9 Box10 Box11 Box12 Box13 Box14 Box15 Box16 Box17 Box18 Box19 Box20 Box21 Box22 Box23 Box24 Box25"
 
 
+}
+
+.wrapper .Box-1 {
+  grid-area: Box1;
+  background: #f899ff;
+}
+
+.wrapper .Box-2 {
+  grid-area: Box2;
+  background: #91e1ff;
+}
+
+.wrapper .Box-3 {
+  grid-area: Box3;
+  background: #f899ff;
+}
+
+.wrapper .Box-4 {
+  grid-area: Box4;
+  background: #91e1ff;
+}
+
+.wrapper .Box-5 {
+  grid-area: Box5;
+  background: #f899ff;
+}
+
+.wrapper .Box-6 {
+  grid-area: Box6;
+  background: #91e1ff;
+}
+
+
+.wrapper .Box-7 {
+  grid-area: Box7;
+  background: #f899ff;
+}
+
+.wrapper .Box-8 {
+  grid-area: Box8;
+  background: #91e1ff;
+}
+
+.wrapper .Box-9 {
+  grid-area: Box9;
+  background: #f899ff;
+}
+
+.wrapper .Box-10 {
+  grid-area: Box10;
+  background: #91e1ff;
+}
+
+.wrapper .Box-11 {
+  grid-area: Box11;
+  background: #f899ff;
+}
+
+.wrapper .Box-12 {
+  grid-area: Box12;
+  background: #91e1ff;
+}
+
+.wrapper .Box-13 {
+  grid-area: Box13;
+  background: #f899ff;
+}
+
+.wrapper .Box-14 {
+  grid-area: Box14;
+  background: #91e1ff;
+}
+
+.wrapper .Box-15 {
+  grid-area: Box15;
+  background: #f899ff;
+}
+
+.wrapper .Box-16 {
+  grid-area: Box16;
+  background: #91e1ff;
+}
+
+.wrapper .Box-17 {
+  grid-area: Box17;
+  background: #f899ff;
+}
+
+.wrapper .Box-18 {
+  grid-area: Box18;
+  background: #91e1ff;
+}
+
+.wrapper .Box-19 {
+  grid-area: Box19;
+  background: #f899ff;
+}
+
+.wrapper .Box-20 {
+  grid-area: Box20;
+  background: #91e1ff;
+}
+
+.wrapper .Box-21 {
+  grid-area: Box21;
+  background: #f899ff;
+}
+
+.wrapper .Box-22 {
+  grid-area: Box22;
+  background: #91e1ff;
+}
+
+.wrapper .Box-23 {
+  grid-area: Box23;
+  background: #f899ff;
+}
+
+.wrapper .Box-24 {
+  grid-area: Box24;
+  background: #91e1ff;
+}
+
+.wrapper .Box-25 {
+  grid-area: Box25;
+  background: #f899ff;
 }
