@@ -30,7 +30,6 @@ html, body {
 .wrapper .header {
   grid-area: header;
   background: blue;
-  color: pink;
 
 }
 
