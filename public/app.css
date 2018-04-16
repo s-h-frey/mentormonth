@@ -89,8 +89,8 @@ body{
     font-size: 16px;
 }
 
-/*Carousel*/
-.carousel-wrapper {
+/*Carousel top*/
+.carousel-top-wrapper {
     width: 375px;
     left: 200px;
     top: 200px;
@@ -126,4 +126,21 @@ body{
     margin-right: auto;
     left: 0;
     right: 0;
+}
+
+/*Carousel bottom*/
+.carousel-bottom-wrapper{
+    width: 375px;
+    left: 700px;
+    top: 200px;
+    display:block;
+    position: fixed;
+}
+.multiple-items-content{
+    width: 90%;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: #D8D8D8;
+    border-radius: 3px;
+    text-align: center;
 }
