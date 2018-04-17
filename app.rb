@@ -4,6 +4,14 @@ Bundler.require
 configure do
   enable :sessions
   set :session_secret, "secret"
+
+  #Server Settings
+  set :bind, '207.154.212.58'
+  set :port, 80
+
+  #setting for localhost
+  # set :bind, 'localhost'
+  # set :port, 4567
 end
 
 #set the default orientation, so stuff like: <link rel="stylesheet" href="/public/app.css"> works
