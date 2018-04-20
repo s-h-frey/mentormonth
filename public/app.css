@@ -1,38 +1,100 @@
-body{
-    width: 100vw;
-    height:100vh;
+@font-face {
+  font-family: 'maison-light'; src: url('/Fonts/Maison-Light.otf') format('truetype');
 }
 
-.container{
-    font-family:'Roboto';
-    bottom: 200px;
-    left: 200px;
-    display:block;
-    position: fixed;
-    background:#FFF;
-    padding:10px 50px 50px;
+html, body {
+  width: 100vw;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  font-family: maison-light, sans-serif;
+  position: absolute;
+}
+h1{
+    color: #B0D400;
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-size: 14px;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  /*                 header title-pic           main-text  slider     icons  apply   date*/
+  grid-template-rows: auto  calc(1.16 * 100vw)   auto      191px      auto   100px   auto auto;
+  grid-column-gap: 8px;
+  grid-template-areas:
+  "header       header      header"
+  "title-pic    title-pic   title-pic"
+  ".            main-text   ."
+  "slider       slider      slider"
+  ".            icons       ."
+  ".            apply       ."
+  "date         date        date"
+  ".            faq         ."
+  "contact      contact     contact"
+  ".            footer      .";
+}
+
+/*Header*/
+.wrapper .header {
+  grid-area: header;
+}
+#xing-logo{
+    float: left;
+    width: 70px;
+    margin: 9px;
+}
+#mentormonth-logo{
     position: absolute;
-    top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    margin-top: 9px;
+    width: 70px;
+    right: calc(50% - 35px);
 }
 
-/*collapsible list*/
-.collapsible-list-wrapper{
-    width: 375px;
-    left: 200px;
-    top: 500px;
-    display:block;
-    position: fixed;
+/*Title & Picture*/
+.wrapper .title-pic {
+    position:relative;
+  grid-area: title-pic;
+  max-width:100%;
+  height: auto;
+  background-image: url("/images/title-pic.png");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
-/* Style the buttons that are used to open and close the accordion panel */
+.wrapper .title-pic .landing-title h2,
+.wrapper .title-pic .landing-title p {
+    color: white;
+    text-align: center;
+}
+.wrapper .title-pic .landing-title{
+    position: absolute;
+    width: 100vw;
+    bottom: calc(8vw + 50px);
+}
+.wrapper .title-pic .apply-button{
+    position: absolute;
+    bottom: 8vw;
+}
+
+/*Main Text*/
+.wrapper .main-text {
+  grid-area: main-text;
+  color: black;
+  background-color: white;
+}
 .accordion {
     background-color: #FFF;
     color: #000;
     cursor: pointer;
-    padding: 18px;
+    padding: 18px 0;
     width: 100%;
     text-align: left;
     border: none;
@@ -40,17 +102,23 @@ body{
     transition: 0.4s;
     border-bottom: 1px solid #979797;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion span{
+    display: block;
+    padding-right: 30px;
+}
+
 .active, .accordion:hover {
     background-color: #D8D8D8;
 }
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
     border-bottom: 1px solid #979797;
+}
+.panel p{
+    font-size: 12px;
+    color: #808080;
 }
 .accordion:after {
     content: "";
@@ -67,40 +135,12 @@ body{
     height: 16px;
 }
 
-/*Apply button*/
-.button-wrapper {
-    width: 375px;
-    left: 200px;
-    top: 400px;
-    display:block;
-    position: fixed;
-}
-.apply-button{
-    width: 134px;
-    height: 40px;
-    background-color: #BDE300;
-    border: none;
-    border-radius: 3px;
-    color: clack;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-/*Carousel top*/
-.carousel-top-wrapper {
-    width: 375px;
-    left: 200px;
-    top: 200px;
-    display:block;
-    position: fixed;
-}
-.carousel {
-    background-color: #D8D8D8;
+/*Slider*/
+.wrapper .slider{
+    grid-area: slider;
     width: 100%;
-    height: 191px;
+    height: auto;
+    background-color: #D8D8D8;
 }
 .carousel-left{
     width: 50%;
@@ -115,6 +155,7 @@ body{
     box-sizing: border-box;
     padding: 39px 25px 25px 0px;
     float: left;
+    font-size: 12px;
 }
 .carousel-image{
     height: 114px;
@@ -128,19 +169,92 @@ body{
     right: 0;
 }
 
-/*Carousel bottom*/
-.carousel-bottom-wrapper{
-    width: 375px;
-    left: 700px;
-    top: 200px;
-    display:block;
-    position: fixed;
+/*Icons*/
+.wrapper .icons {
+  grid-area: icons;
+  background-color: white;
+}
+
+.date h1{
+    margin-left: 28px;
+}
+
+/*Apply button*/
+.wrapper .apply {
+  grid-area: apply;
+  background: white;
+}
+.apply-button{
+    position: absolute;
+    width: 134px;
+    height: 40px;
+    left: calc(50% - 67px);
+    margin-top: 30px;
+    background-color: #007575;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+/*Date*/
+.wrapper .date {
+  grid-area: date;
+  padding-bottom: 25px;
+  background-color: #D8D8D8;
 }
 .multiple-items-content{
     width: 90%;
     box-sizing: border-box;
     height: 100px;
-    background-color: #D8D8D8;
+    background-color: white;
     border-radius: 3px;
+    display: table;s
+}
+.multiple-items-content p{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
+.multiple-items-content:first-child{
+    margin-left: 28px;
+}
+
+/*FAQ*/
+.wrapper .faq {
+  grid-area: faq;
+  background: white;
+  margin-bottom: 50px;
+}
+.faq .accordion span{
+    font-size: 12px;
+}
+
+/*Contact*/
+.wrapper .contact {
+  grid-area: contact;
+  background-color: #B0D400;
+}
+.wrapper .contact p{
+    color: white;
+    margin: 28px;
+}
+
+/*Footer*/
+.wrapper .footer {
+    grid-area: footer;
+    background-color: white;
+    margin-top: 30px;
+    border-top: 1px solid #D8D8D8;
+}
+.wrapper .footer p{
+    color: #AAA;
+    font-size: 10px;
     text-align: center;
 }
