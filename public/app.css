@@ -60,7 +60,7 @@ p{
 
 /*Title & Picture*/
 .wrapper .title-pic {
-    position:relative;
+  position:relative;
   grid-area: title-pic;
   max-width:100%;
   height: auto;
@@ -108,7 +108,7 @@ p{
 }
 
 .active, .accordion:hover {
-    background-color: #808080;
+    background-color: #B0D400;
 }
 .panel {
     background-color: white;
@@ -118,7 +118,7 @@ p{
 }
 .panel p{
     font-size: 12px;
-    color: #B0D400;
+    color: #808080;
 }
 .accordion:after {
     content: "";
