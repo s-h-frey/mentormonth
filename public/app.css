@@ -101,6 +101,7 @@ p{
     outline: none;
     transition: 0.4s;
     border-bottom: 1px solid #979797;
+    -webkit-transition: height 0.3s ease-in;
 }
 .accordion span{
     display: block;
