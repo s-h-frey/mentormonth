@@ -10,8 +10,8 @@ configure do
   set :port, 80
 
   #setting for localhost
-  # set :bind, 'localhost'
-  # set :port, 4567
+  #set :bind, 'localhost'
+  #set :port, 4567
 end
 
 #set the default orientation, so stuff like: <link rel="stylesheet" href="/public/app.css"> works
