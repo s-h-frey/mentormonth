@@ -108,7 +108,7 @@ p{
 }
 
 .active, .accordion:hover {
-    background-color: #B0D400;
+    background-color: #808080;
 }
 .panel {
     background-color: white;
@@ -118,7 +118,7 @@ p{
 }
 .panel p{
     font-size: 12px;
-    color: #808080;
+    color: #B0D400;
 }
 .accordion:after {
     content: "";
