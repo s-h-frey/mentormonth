@@ -103,12 +103,6 @@ p{
     border-bottom: 1px solid #979797;
 }
 
-.accordion .panel{
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
 
 .accordion span{
     display: block;
@@ -135,6 +129,7 @@ p{
     height: 16px;
     float: right;
     margin-left: 5px;
+    transition: 0.4s;
 }
 .active:after {
     content: "";
