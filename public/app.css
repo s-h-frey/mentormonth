@@ -173,15 +173,6 @@ p{
 
 /*Icons*/
 
-.icons {
-  overflow: hidden;
-  -webkit-transition: height 0.3s ease-in;
-  -moz-transition: height 0.3s ease-in;
-  -o-transition: height 0.3s ease-in;
-  -ms-transition: height 0.3s ease-in;
-  transition: height 0.3s ease-in;
-
-}
 .wrapper .icons {
   grid-area: icons;
   background-color: white;
