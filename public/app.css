@@ -193,9 +193,9 @@ p{
 }
 .apply-button{
     position: absolute;
-    width: 134px;
+    width: 150px;
     height: 40px;
-    left: calc(50% - 67px);
+    left: calc(50% - 75px);
     margin-top: 30px;
     background-color: #007575;
     border: none;
