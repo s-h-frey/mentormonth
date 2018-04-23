@@ -19,6 +19,7 @@ h2{
 }
 p{
     font-size: 14px;
+    line-height: 150%;
 }
 
 .wrapper {
@@ -156,6 +157,9 @@ p{
     padding: 39px 25px 25px 0px;
     float: left;
     font-size: 12px;
+}
+.carousel-right p{
+    margin: 0;
 }
 .carousel-image{
     height: 114px;
