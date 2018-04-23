@@ -61,7 +61,7 @@ p{
 
 /*Title & Picture*/
 .wrapper .title-pic {
-    position:relative;
+  position:relative;
   grid-area: title-pic;
   max-width:100%;
   height: auto;
@@ -103,13 +103,15 @@ p{
     transition: 0.4s;
     border-bottom: 1px solid #979797;
 }
+
+
 .accordion span{
     display: block;
     padding-right: 30px;
 }
 
 .active, .accordion:hover {
-    background-color: #D8D8D8;
+    background-color: #B0D400;
 }
 .panel {
     background-color: white;
@@ -174,6 +176,7 @@ p{
 }
 
 /*Icons*/
+
 .wrapper .icons {
   grid-area: icons;
   background-color: white;
